@@ -1,0 +1,58 @@
+1. Write assignment statements that perform the following operations with the variables
+a, b, and c.
+a. Adds 2 to a and stores the result in b.
+b. Multiplies b times 4 and stores the result in a.
+c. Divides a by 3.14 and stores the result in b.
+d. Subtracts 8 from b and stores the result in a.
+e. Stores the character ‘K’ in c.
+
+integer a, b
+char c;
+b = a+2;
+a = b * 4;
+b = a/3.14;
+a = b-8;
+c = 'K';
+
+
+
+
+
+2. Assume the variables result, w, x, y, and z are all integers, and that w = 5,
+x = 4, y = 8, and z = 2. What value will be stored in result in each of the following
+statements?
+a. result = x + y;
+    4 + 5 = 9
+b. result = z * 2;
+    2 * 2 = 4
+c. result = y / x;
+    8 / 4 = 2
+d. result = y − z;
+    8 - 2 = 6
+e. result = w % 2;
+    5 mod 2 = 1
+
+
+
+
+3. Modify the following program so it prints two blank lines between each line of text.
+public class
+{
+public static void main(String[] args)
+{
+System.out.print("This is line 1.\n\n");
+System.out.print("This is line 2.\n\n");
+System.out.print("This is line 3.\n\n");
+System.out.print("This is line 4.\n\n");
+System.out.println("This is line 5.");
+}
+}
+*/
+
+/* 
+4. Convert the following pseudocode to Java code. Be sure to declare the appropriate
+variables.
+Store 20 in the speed variable.
+Store 10 in the time variable.
+Multiply speed by time and store the result in the distance variable.
+Display the contents of the distance variable.
