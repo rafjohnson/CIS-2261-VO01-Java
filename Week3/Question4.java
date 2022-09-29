@@ -14,11 +14,6 @@ Display the contents of the distance variable.*/
 
         System.out.println("Distance: "+ distance);
 
-        System.out.print("This is line 1.\n\n\n");
-        System.out.print("This is line 2.\n\n");
-        System.out.print("This is line 3.\n\n");
-        System.out.print("This is line 4.\n\n");
-        System.out.println("This is line 5.");
 
     }
 
