@@ -16,7 +16,7 @@ Hint: Use the value 0.65 to represent 65 percent
     +------------------------+-------------------------------------------------+-------------------------------+
     | Input                  | Process                                         | Output                        |
     +------------------------+-------------------------------------------------+-------------------------------+
-    | Sales $                | * East Coast = Total Sales - (.65* Total Sales) | Display East Coast Division $ |
+    | Sales $                | * East Coast = (Percentage * Total Sales)       | Display East Coast Division $ |
     | Percent of Total Sales |                                                 |                               |
     +------------------------+-------------------------------------------------+-------------------------------+
       */
@@ -32,7 +32,7 @@ Hint: Use the value 0.65 to represent 65 percent
         percentage = .65;
 
         //calculate
-        eastCoastSales = totalSales - (percentage * totalSales);
+        eastCoastSales = percentage * totalSales;
 
         //format decimal to dollar format
         NumberFormat formatter = new DecimalFormat("#,000.00");
