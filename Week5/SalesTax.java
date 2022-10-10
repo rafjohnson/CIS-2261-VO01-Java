@@ -42,7 +42,7 @@ Hint: Use the value 0.02 to represent 2 percent, and 0.055 to represent 5.5 perc
        purchaseAmount = input.nextDouble(); 
        input.close(); 
    
-       //calculations, needing to deal with rounding errors with multiple percentages. https://stackoverflow.com/a/11701527/7858537
+       //calculations, need to deal with rounding errors with multiple percentages. https://stackoverflow.com/a/11701527/7858537
        stateSalesTaxAmt  = Math.round((purchaseAmount * STATE_SALES_TAX) * 100.0)/100.0; 
        countySalesTaxAmt = Math.round((purchaseAmount * COUNTY_SALES_TAX) * 100.0)/100.0; 
 

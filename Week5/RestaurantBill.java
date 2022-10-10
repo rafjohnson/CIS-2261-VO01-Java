@@ -38,7 +38,7 @@ amount, tip amount, and total bill on the screen.
     mealCharge = input.nextDouble(); 
     input.close(); 
 
-    //calculations, needing to deal with rounding errors with multiple percentages. https://stackoverflow.com/a/11701527/7858537
+    //calculations, need to deal with rounding errors with multiple percentages. https://stackoverflow.com/a/11701527/7858537
     mealTaxAmount  = Math.round((mealCharge * SALES_TAX) * 100.0)/100.0; 
     
     tipAmount = Math.round( ((mealCharge + mealTaxAmount) * TIP_PERCENTAGE)*100.0 )/100.0;
