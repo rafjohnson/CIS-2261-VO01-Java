@@ -1,0 +1,29 @@
+Create a number guessing game.
+Generate a random number between 1 and 50.
+Have the user guess a number.
+If the user guesses wrong give them hints to guess higher or lower.
+Keep track of the number of guesses. When they guess it correctly give
+them some feedback on how well they did and the number of guesses it
+took.
+
+int randNum = rand(1-50)
+int guess
+bool gotItRight
+int guessCount
+
+do while gotItRight = false
+{
+    print "enter a number betwen 1-50"
+    if guess>randNum
+        guessCount++
+        print "too high"
+    elseif guess<rand num
+        guessCount++
+        print "too low"
+    else
+        guessCount++
+        gotItRight = true
+}
+ print "number was x, you found it in guessCount guesses"
+
+
