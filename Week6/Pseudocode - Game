@@ -14,15 +14,20 @@ int guessCount
 do while gotItRight = false
 {
     print "enter a number betwen 1-50"
-    if guess>randNum
+    input guess
+    if valid //within 1-50
+        if guess>randNum
+            guessCount++
+            print "too high"
+        elseif guess<rand num
+            guessCount++
+            print "too low"
+        else
+            guessCount++
+            gotItRight = true
+    else    
         guessCount++
-        print "too high"
-    elseif guess<rand num
-        guessCount++
-        print "too low"
-    else
-        guessCount++
-        gotItRight = true
+        invalid number
 }
  print "number was x, you found it in guessCount guesses"
 

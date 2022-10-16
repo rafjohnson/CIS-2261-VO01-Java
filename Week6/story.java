@@ -1,10 +1,19 @@
-
-
-
 package Week6;
 
 import java.util.Scanner;
-
+/*
+ * +-------------------------+---------------------+---------------------------------------------------------------------------+
+| Input                   | Process             | Output                                                                    |
++-------------------------+---------------------+---------------------------------------------------------------------------+
+| • User's name           | String manipulation | There once was a person named NAME who lived in CITY. At the age of AGE,  |
+| • User's age            |                     | NAME went to college at COLLEGE. NAME graduated and went to work as a     |
+| • The name of a city    |                     | PROFESSION. Then, NAME adopted a(n) ANIMAL named PETNAME. They both lived |
+| • The name of a college |                     | happily ever after!                                                       |
+| • A profession          |                     |                                                                           |
+| • A type of animal      |                     |                                                                           |
+| • A pet’s name          |                     |                                                                           |
++-------------------------+---------------------+---------------------------------------------------------------------------+
+ */
 public class story {
     public static void main(String[] args) throws InterruptedException
     {
@@ -12,9 +21,7 @@ public class story {
         String output="";
         Integer age;
 
-
-
-        System.out.printf("Enter information about yourself, and I'll tell you a story.\n");
+        System.out.printf("Enter some information about yourself, and I'll tell you a story.\n");
         
         Scanner input = new Scanner(System.in);
 
@@ -69,6 +76,7 @@ public class story {
 
         //finally output
         System.out.println(output);
+        input.close();
 
    }
 }
