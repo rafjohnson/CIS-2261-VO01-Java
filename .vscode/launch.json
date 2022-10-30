@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch payrollDemo",
+            "request": "launch",
+            "mainClass": "Week8.payrollDemo",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
             "name": "Launch game",
             "request": "launch",
             "mainClass": "Week6.game",
