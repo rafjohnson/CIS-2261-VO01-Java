@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestScores",
+            "request": "launch",
+            "mainClass": "Week9.TestScores",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
             "name": "Launch MobileServiceProvider",
             "request": "launch",
             "mainClass": "Week9.MobileServiceProvider",

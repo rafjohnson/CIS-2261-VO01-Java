@@ -1,5 +1,9 @@
 package Week9;
 
+import java.util.Scanner;
+
+import Week6.story;
+
 public class TestScores {
     /*
      * TestScores 
@@ -15,8 +19,50 @@ Test Score Average Letter Grade
 Below 60 F
      */
 
-    public static void main(String[] args){
+     /*
+      * Input: 3 test scores
+        Process: average 3 scores, if/else-if/else based on score to display output.
+      Output: Average, Grade, message
+      */
 
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+
+        Double test1=0.0, test2=0.0, test3 = 0.0;
+        Double finalScore;
+
+        System.out.println("Enter the first test score: ");
+        test1 = scan.nextDouble();
+
+        System.out.println("Enter the second test score:");
+        test2 = scan.nextDouble();
+
+        System.out.println("Enter the third test score:");
+        test3=scan.nextDouble();
+
+        finalScore = (test1+test2+test3)/3;
+
+        if(90<=finalScore)
+        {
+            System.out.printf("Your average was a %.1f which is an A. Excellent job!",finalScore);
+        }
+        else if(80<=finalScore && finalScore<90)
+        {
+            System.out.printf("Your average was an %.1f which is a B. Great work!",finalScore);
+        }
+        else if (70<=finalScore && finalScore<80)
+        {
+            System.out.printf("Your average was a %.1f which is a C. Keep up the hard work!",finalScore);
+        }
+        else if (60<=finalScore && finalScore<70)
+        {
+            System.out.printf("Your average was a %.1f which is an D. Great effort, but study harder.",finalScore);
+        }
+        else
+        {
+            System.out.printf("Your average was a %.1f which is an F. You're failing, please see me.",finalScore);
+        }
+        scan.close();
     }
 }
 
