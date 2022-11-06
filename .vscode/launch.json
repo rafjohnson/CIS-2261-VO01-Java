@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TimeCalculator",
+            "request": "launch",
+            "mainClass": "Week9.TimeCalculator",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
             "name": "Launch RomanNumerals",
             "request": "launch",
             "mainClass": "Week9.RomanNumerals",
