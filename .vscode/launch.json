@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AverageRainfall",
+            "request": "launch",
+            "mainClass": "Week10.AverageRainfall",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
+            "name": "Launch PenniesForPay",
+            "request": "launch",
+            "mainClass": "Week10.PenniesForPay",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumNumbers",
+            "request": "launch",
+            "mainClass": "Week10.SumNumbers",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
             "name": "Launch TestScores",
             "request": "launch",
             "mainClass": "Week9.TestScores",
