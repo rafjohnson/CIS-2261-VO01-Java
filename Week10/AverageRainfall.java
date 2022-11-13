@@ -40,7 +40,7 @@ public class AverageRainfall {
         double[] rainfallMontlyTotals = new double[12];
         Integer totalMonths = 0;
         double totalRainfall = 0;
-        double inputRainfall;
+        
         Integer inputYears;
 
         Scanner scan = new Scanner(System.in);
@@ -58,9 +58,32 @@ public class AverageRainfall {
             // loop months
             for (int month = 0; month < 12; month++) 
             {
-                // get user input
-                System.out.printf("Enter the rainfall for %s year %d: ", months[month], year + 1);
-                inputRainfall = scan.nextDouble();
+                // get user input, validating for positive
+                boolean validRainfall=false; 
+                double inputRainfall=0.0;
+                while(!validRainfall)
+                {   
+                    do 
+                    {
+                        System.out.printf("Enter the rainfall total for %s, year %s: ", months[month],year+1);
+                        while(!scan.hasNextDouble())
+                        {
+                            System.out.printf("You must enter a valid number: ");
+                            scan.next();
+                        }
+                        inputRainfall = scan.nextDouble();
+                        if(inputRainfall<0)
+                        {
+                            System.out.println("Negative rainfall is impossible. Enter a valid number");
+                            validRainfall = false;
+                        }
+                        else
+                        {
+                            validRainfall = true;
+                        }
+                    }while(inputRainfall<=0);
+                }         
+                
 
                 // save to rainfall table
                 rainfall[year][month] = inputRainfall;
