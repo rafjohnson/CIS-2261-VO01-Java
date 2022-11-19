@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Week11.ParkingTicket.Program",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
             "name": "Launch program",
             "request": "launch",
             "mainClass": "Week11.CarpetCalculator.program",
