@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>550</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Week11.ParkingTicket::ParkedCar
+--
+-make: String
+-model: String
+-color: String
+-licenseNumber: String
+-minutesParked: Integer
+--
++ParkedCar(String pMake, String pModel, String pColor, String pLicenseNumber): ctor
++getMake(): String
++getModel(): String
++getColor(): String
++getLicenseNumber(): String
++getMinutesParked(): Integer
++setMinutesParked(Integer pMinutesParked): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>10</y>
+      <w>530</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Week11.ParkingTicket::ParkingTicket
+--
+-car: ParkedCar
+-parkingMeter: ParkingMeter
+-policeOfficer: PoliceOfficer
+--
++ParkingTicket(ParkedCar pCar, ParkingMeter pMeter, PoliceOfficer pOfficer): ctor
++getCar(): ParkedCar
++getParkingMeter(): ParkingMeter
++getPoliceOfficer(): PoliceOfficer
++getFine(): Double
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>280</y>
+      <w>610</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Week11.ParkingTicket::PoliceOfficer
+--
+~officerFirstName: String
+~officerLastName: String
+~officerBadgeNumber: String
+--
++PoliceOfficer(String pOfficerFirstName, String pOfficerLastName, String pOfficerNumber): ctor
++isCarTimeExpired(ParkingMeter pMeter, ParkedCar pCar): Boolean
++writeParkingTicket(ParkedCar pCar, ParkingMeter pMeter): ParkingTicket
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>280</y>
+      <w>320</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Week11.ParkingTicket::ParkingMeter
+--
+-minutesPurchased: Integer
+--
++ParkingMeter(): ctor
++ParkingMeter(Integer pMinutesPurchased): ctor
++getMinutesPurchased(): Integer
++setMinutes(Integer pMinutes): void
++addMinutes(Integer pMinutes): Integer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

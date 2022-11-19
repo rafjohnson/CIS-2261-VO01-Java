@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text>Space for diagram notes</help_text>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>310</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>ParkedCar
+--
+make: String
+model: String
+color: String
+licenseNumber: String
+minutesParked: Integer
+--
+ParkedCar(make:String, model:String, 
+    color:String, licenseNumber:String)
+--
++getMake: String
++getModel: String
++getColor: String
++getLicenseNumber: String
++getMinutesParked: Integer
+--
++setMinutesParked(Integer): Void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>320</y>
+      <w>250</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>ParkingMeter
+--
+minutesPurchased:Integer
+--
+ParkingMeter()
+ParkingMeter(minutesPurchased:Integer)
+--
++getMinutes:Integer
+--
++setMinutes:Void
+--
++addTime(Integer):Integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>280</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ParkingTicket
+--
+car:ParkedCar
+meter:ParkingMeter
+policeOfficer:PoliceOfficer
+--
++ParkingTicket(car:ParkedCar, 
+meter:ParkingMeter, officer:PoliceOfficer
+--
+getCar():ParkedCar
+getPoliceOfficer():PoliceOfficer
+getParkingMeter():ParkingMeter
+--
+getFine():Double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>510</y>
+      <w>300</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>PoliceOfficer
+--
+officerFN:String
+officerLN:String
+officerBadgeNumber:String
+--
++PoliceOfficer(officerFirstName:String,
+    officerLastName:String,officerNumber:String)
+--
++isCarTimeExpired(meter:ParkingMeter,
+    car:ParkedCar):boolean
++writeParkingTicket(car:ParkedCar,
+     meter:ParkingMeter):ParkingTicket
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>0</y>
+      <w>90</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;310.0;70.0;310.0;70.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>280</y>
+      <w>170</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;80.0;50.0;80.0;10.0;150.0;10.0;150.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>330</y>
+      <w>100</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;260.0;70.0;260.0;70.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>580</y>
+      <w>90</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;70.0;60.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>280</y>
+      <w>80</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;360.0</additional_attributes>
+  </element>
+</diagram>
