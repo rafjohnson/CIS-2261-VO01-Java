@@ -49,9 +49,18 @@ public class ParkedCar {
     return licenseNumber;
   }
 
-  public int getMinutesParked()
+  public Integer getMinutesParked()
   {
     return minutesParked;
   }
+
+  //setters
+  public void setMinutesParked(Integer pMinutesParked )
+  {
+    minutesParked = pMinutesParked;
+  }
+
+  //methods
+  //Nothing here. 
 
 }
