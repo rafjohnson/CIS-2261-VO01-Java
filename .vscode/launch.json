@@ -8,85 +8,8 @@
             "type": "java",
             "name": "Launch Program",
             "request": "launch",
-            "mainClass": "Week11.ParkingTicket.Program",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch program",
-            "request": "launch",
-            "mainClass": "Week11.CarpetCalculator.program",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch AverageRainfall",
-            "request": "launch",
-            "mainClass": "Week10.AverageRainfall",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch PenniesForPay",
-            "request": "launch",
-            "mainClass": "Week10.PenniesForPay",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch SumNumbers",
-            "request": "launch",
-            "mainClass": "Week10.SumNumbers",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch TestScores",
-            "request": "launch",
-            "mainClass": "Week9.TestScores",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch MobileServiceProvider",
-            "request": "launch",
-            "mainClass": "Week9.MobileServiceProvider",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch TimeCalculator",
-            "request": "launch",
-            "mainClass": "Week9.TimeCalculator",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch RomanNumerals",
-            "request": "launch",
-            "mainClass": "Week9.RomanNumerals",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch payrollDemo",
-            "request": "launch",
-            "mainClass": "Week8.payrollDemo",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch game",
-            "request": "launch",
-            "mainClass": "Week6.game",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
-        },
-        {
-            "type": "java",
-            "name": "Launch story",
-            "request": "launch",
-            "mainClass": "Week6.story",
-            "projectName": "CIS-2261-VO01-Java_4fccd446"
+            "mainClass": "Week12.Payroll.Program",
+            "projectName": "CIS-2261-VO01-Java_8558429b"
         },
         {
             "type": "java",
