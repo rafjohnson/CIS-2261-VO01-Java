@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>60</y>
+      <w>630</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>GradeBook
+Keeps track of 5 students, and 4 tests per student. Not how I'd design it
+but that's the design in the assignment. Normally I'd do a single class for a 
+student, and a list of those students with the ability to add more tests and students. 
+--
+-studentName: String[5]
+-studentLetterGrade: Char[5]
+-studentTests:Double[5][4]
+--
+Constructor:
+default constructor only
+--
+Getters:
+getStudentNameByIndex(index:int):String
+getStudentIndexByName(name:String):int
+getGradeAverageByIndex(index:int):Char
+getAverageScoreByIndex(index:int):Double
+getTestScoreByIndexByIndex(studentIndex:int,testIndex:int):Double
+--
+Methods:
++addStudentAndGrades(index:index, name:String,gradeAvg:Char,testGrades:double[4]):void
++calculateGradeAverageLetter(pTestGradeAverage:Double): char
++calculateGradeAverage(pTestGrades:Double[]): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
