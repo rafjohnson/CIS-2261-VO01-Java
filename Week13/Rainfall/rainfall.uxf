@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>920</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Rainfall
+--
+-MONTHS = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }: String[]
+-rainfallAmounts = new Double[12]: Double[]
+--
++Rainfall(): constructor
++Rainfall(Double[] pRainfall): constructtor
+~getRainfallByMonth(Integer pMonth): Double
+~getMonthNamebyMonthNumber(Integer pMonth): String
++setValueByMonth(Double pValue, int pMonth): void
++getTotalRainfall(): Double
++getAverageRainfall(): Double
++getMonthWithMostRain(): Integer
++getMonthWithLeastRain(): Integer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
