@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>620</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>DriverExam
+--
+-ANSWERS = { 'B', 'D', 'A', 'A', 'C', 'A', 'B', 'A', 'C', 'D', 'B', 'C', 'D', 'A', 'D', 'C', 'C', 'B', 'D', 'A' }: char[]
+-studentAnswers = new char[20]: char[]
+--
++DriverExam(): constructor
++DriverExam(char[] pAnswers): constructor
++setStudentAnswerAtIndex(char pAnswer, int index): void
+-isCorrect(int index): boolean
++passed(): boolean
++totalCorrect(): Integer
++totalIncorrect(): Integer
++questionsMissed(): Integer[]
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
