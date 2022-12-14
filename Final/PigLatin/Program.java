@@ -3,7 +3,6 @@ package Final.PigLatin;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Week6.story;
 
 /*Write a program that reads a sentence as input and converts each word to “Pig Latin”. In
 one version of Pig Latin you convert a word by removing the first letter, placing that letter
