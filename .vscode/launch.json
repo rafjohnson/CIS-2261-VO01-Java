@@ -8,6 +8,27 @@
             "type": "java",
             "name": "Launch Program",
             "request": "launch",
+            "mainClass": "Final.VowelsAndConsonants.Program",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Final.PasswordVerifier.Program",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Final.WordCounter.Program",
+            "projectName": "CIS-2261-VO01-Java_4fccd446"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
             "mainClass": "Week13.DriversLicense.Program",
             "projectName": "CIS-2261-VO01-Java_4fccd446"
         },
