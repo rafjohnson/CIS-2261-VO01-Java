@@ -117,6 +117,7 @@ public class Program {
          Matcher numbMatcher = numberPattern.matcher(pPassword);
          long numberCount = numbMatcher.results().count();
 
+         //validate info
          if(PWLength>=6 && upperCaseCount>0 && lowerCaseCount>0 && numberCount>0)
          {
             passes=true;
